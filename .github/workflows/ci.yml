@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  workflow_run:
+    workflows: ['Success CI', 'Fail CI']
+    types:
+      - completed
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./
+      - run: echo "Pass"
