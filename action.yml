@@ -4,4 +4,5 @@ runs:
   using: 'composite'
   steps:
     - if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+      shell: bash
       run: exit 1
