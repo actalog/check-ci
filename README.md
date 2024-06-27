@@ -20,6 +20,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: gabrielrufino/check-ci@main
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: echo "Your CD"
 ```
