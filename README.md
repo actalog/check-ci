@@ -19,7 +19,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: gabrielrufino/check-ci@main
+      - uses: actalog/check-ci@main
       - uses: actions/checkout@v4
       - run: echo "Your CD"
 ```
