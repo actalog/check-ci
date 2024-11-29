@@ -1,4 +1,4 @@
-name: Check CI
+name: '@actalog/check-ci'
 
 runs:
   using: 'composite'
