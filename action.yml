@@ -1,8 +1,13 @@
 name: '@actalog/check-ci'
+description: Checks CI before CD
+author: Gabriel Rufino <contato@gabrielrufino.com>
+branding:
+  icon: check-square
+  color: green
 
 runs:
   using: 'composite'
   steps:
-    - if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    - if: ${{ github.event.workflow_run.conclusion != 'success' }}
       run: exit 1
       shell: bash
