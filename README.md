@@ -1,4 +1,6 @@
-# Check CI
+# @actalog/check-ci
+
+[![CD](https://github.com/actalog/check-ci/actions/workflows/cd.yml/badge.svg)](https://github.com/actalog/check-ci/actions/workflows/cd.yml)
 
 Checks CI before CD
 
